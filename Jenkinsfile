@@ -5,7 +5,7 @@ pipeline {
         stage('Enter'){
             steps{
                 echo 'Entering to my-project'
-                sh 'cd my-project'
+                sh 'cd ~'/my-project'
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
